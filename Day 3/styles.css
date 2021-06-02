@@ -3,6 +3,7 @@ body {
   padding: 2rem;
   box-sizing: border-box;
   color: #314d63;
+  background-color: white;
 }
 
 h3 {
@@ -26,6 +27,7 @@ fieldset {
 
 legend {
   margin: auto;
+  background-color: white;
   font-size: 1.5rem;
   padding: 0 3rem;
   font-weight: 500;
