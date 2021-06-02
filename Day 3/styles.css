@@ -18,6 +18,8 @@ fieldset {
   display: flex;
   width: 45%;
   margin: auto;
+  border-style: solid;
+  border-color: black;
   justify-content: space-between;
   padding: 2rem;
 }
@@ -25,8 +27,7 @@ fieldset {
 legend {
   margin: auto;
   font-size: 1.5rem;
-  padding: 3rem;
-
+  padding: 0 3rem;
   font-weight: 500;
 }
 
@@ -34,6 +35,7 @@ legend {
   display: flex;
   flex-direction: column;
   width: 40%;
+  padding: 1rem;
 }
 
 .right_item {
