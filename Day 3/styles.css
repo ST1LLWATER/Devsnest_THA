@@ -65,3 +65,19 @@ legend {
   margin: 0.5rem 0;
   font-size: 1.1rem;
 }
+
+@media (max-width: 560px) {
+  fieldset {
+    flex-direction: column;
+  }
+  .right {
+    width: 80%;
+    border-left: none;
+    border-top: 2px solid #336c98;
+    padding: 1rem;
+  }
+
+  .left {
+    width: 80%;
+  }
+}
