@@ -4,29 +4,27 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 98vh;
+  height: 100vh;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 }
 
 .round {
   position: absolute;
-  border: 10px solid black;
-  border-style: dotted;
   height: 20rem;
   width: 20rem;
   border-radius: 50%;
   animation: min 10s linear infinite;
   animation-direction: reverse;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
+    5px 5px 10px rgba(255, 255, 255, 0.1) inset;
 }
 
 .boundary {
+  position: relative;
   height: 20rem;
   width: 20rem;
   border-radius: 50%;
-  /* border: 10px solid black; */
-
-  /* animation: min 60s infinite;
-  animation-direction: reverse; */
-  position: relative;
 }
 
 .cover {
@@ -38,21 +36,22 @@ body {
   border-style: dashed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  animation: cov 10s linear infinite;
+  animation-direction: reverse;
   z-index: 1;
-  /* animation: min 10s linear infinite;
-  animation-direction: reverse; */
 }
 
 .cover1 {
   position: absolute;
-  height: 0.8rem;
-  width: 0.8rem;
+  height: 0.9rem;
+  width: 0.9rem;
   border-radius: 50%;
   background-color: black;
   top: 50%;
   left: 50%;
+
   transform: translate(-50%, -50%);
+
   z-index: 2;
 }
 
@@ -64,7 +63,8 @@ body {
   left: 50%;
   background-color: indianred;
   transform-origin: left center;
-  transform: rotate(210deg) translateY(50%);
+  border-radius: 50% 50% 50% 0;
+  transform: translateY(0%) rotate(210deg);
 }
 
 .minute {
@@ -75,15 +75,37 @@ body {
   left: 50%;
   background-color: indianred;
   transform-origin: left center;
-  animation: min 60s steps(60, end) infinite;
-  transform: rotate(-30deg) translateY(50%);
+  transform: rotate(-30deg) translateY(-50%);
+  border-radius: 50% 50% 50% 0;
+  /* transform: rotate(-30deg); */
 }
 
-@keyframes min {
+.second {
+  position: absolute;
+  width: 8.5rem;
+  height: 0.2rem;
+  top: 50%;
+  left: 50%;
+  background-color: indianred;
+  transform-origin: left center;
+  animation: sec 60s steps(60, end) infinite;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(90deg);
+}
+
+@keyframes sec {
   from {
-    transform: rotate(0deg);
+    transform: translateY(-50%) rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: translateY(-50%) rotate(360deg);
+  }
+}
+@keyframes cov {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
