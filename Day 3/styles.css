@@ -10,7 +10,6 @@ body {
   background-image: url("./Background.png");
   background-attachment: fixed;
   background-size: cover;
-
   /* mix-blend-mode: multiply; */
 }
 
