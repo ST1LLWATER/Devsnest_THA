@@ -29,15 +29,7 @@ div.black {
   background-color: cyan;
 }
 
-div.black:hover {
-  background-color: #000;
-}
-
 div.white {
   background-color: #000;
   border: none;
-}
-
-div.white:hover {
-  background-color: #fde311;
 }

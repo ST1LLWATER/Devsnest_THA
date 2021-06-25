@@ -11,7 +11,6 @@ function makePixel(i) {
     pixel.classList.add("white");
   } else {
     pixel.classList.add("black");
-    pixel.id = "" + i;
   }
   return pixel;
 }
