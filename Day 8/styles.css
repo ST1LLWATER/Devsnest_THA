@@ -1,0 +1,44 @@
+body {
+  background-color: #000;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; 
+  
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+  }
+  
+  .container div {
+    width: 20px;
+    height: 20px;
+    border-collapse: collapse;
+  
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  
+  div.black {
+    background-color: #FDE311;
+  }
+  
+  div.black:hover {
+    background-color: #000;
+  }
+  
+  div.white {
+    background-color: #000;
+    border: none;
+  }
+
+  div.white:hover {
+    background-color: #FDE311;
+  }
+  
