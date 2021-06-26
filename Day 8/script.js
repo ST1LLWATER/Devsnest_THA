@@ -23,16 +23,13 @@ for (let i = 0; i < 400; i++) {
 container.addEventListener("click", doTask);
 
 function doTask(e) {
-  console.log(e.id);
   var pixelClass = e.target.className;
 
   if (pixelClass == "black") {
     e.target.classList.remove("black");
     e.target.classList.add("white");
-    console.log(e.target);
   } else {
     e.target.classList.remove("white");
     e.target.classList.add("black");
-    console.log(e.target);
   }
 }
