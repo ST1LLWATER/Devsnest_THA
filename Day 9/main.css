@@ -1,0 +1,75 @@
+body {
+  margin-top: 100px;
+  display: flex;
+  color: white !important;
+  align-content: center;
+  justify-content: center;
+  background: url("./img/1131421.jpg");
+  background-size: cover;
+
+  user-select: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 15px;
+  width: 70%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#box {
+  margin-top: 10px;
+}
+
+table {
+  width: 100%;
+  border-spacing: 15px;
+  outline: 1px solid white;
+}
+
+td {
+  outline: 1px solid white;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+#stage {
+  margin-top: 81px;
+  max-width: 400px;
+  perspective: 1000px;
+  margin-left: 0%;
+}
+.counting {
+  outline: 1px solid white;
+  display: flex;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  justify-content: space-around;
+}
+
+#show {
+}
+#show1 {
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seatfilled {
+  color: white;
+}
+i {
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .counting {
+    flex-direction: column;
+    text-align: center;
+  }
+}
