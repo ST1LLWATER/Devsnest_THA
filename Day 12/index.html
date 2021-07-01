@@ -17,16 +17,24 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
     <title>Todo List</title>
   </head>
   <body>
     <header><h1>ToDo List</h1></header>
     <form>
-      <input type="text" class="todo-input" />
-      <button class="todo-button" type="submit">
-        <i class="fas fa-plus-square"></i>
-      </button>
+      <div class="inputs">
+        <input type="text" class="todo-input" />
+        <button class="todo-button" type="submit">
+          <i class="fas fa-plus-square"></i>
+        </button>
+      </div>
       <div class="select">
         <select name="todos" class="filter-todo">
           <option value="all">All</option>
