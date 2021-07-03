@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: url("./background2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.box-background {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  background: url("./background2.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(6px);
+  z-index: -100;
+}
+
+.box {
+  position: relative;
+  height: 70vh;
+  width: 25%;
+  overflow: hidden;
+  /* background: rgba(255, 255, 255, 0.2); */
+  /* backdrop-filter: blur(15px); */
+  /* filter: blur(10px); */
+  border-radius: 15px;
+  box-shadow: 0 0 16px black;
+  color: black;
+}
+
+#weathercon {
+  height: 60%;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#weathercon i {
+  margin-top: 18%;
+  font-size: 4rem;
+  animation: rotate 25s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.fa-street-view {
+  animation: rotates 3s linear infinite alternate;
+}
+
+@keyframes rotates {
+  from {
+    transform: translateX(-0.2rem);
+  }
+  to {
+    transform: translateX(0.2rem);
+  }
+}
+
+.info {
+  height: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 470px) {
+  .box {
+    width: 80%;
+  }
+}
