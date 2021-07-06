@@ -1,0 +1,121 @@
+body {
+  background-image: url("./Web_1920_12x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background: no-repeat url("./Web_1920_12x.png"); */
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.card {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 350px;
+  grid-template-rows: 160px 160px 80px;
+  grid-template-areas: "image" "text" "stats";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  text-align: center;
+  border-radius: 15px;
+}
+
+/* .victor {
+    box-sizing: border-box;
+    border-radius: 50%;
+    position: absolute;
+    top: 113px;
+    left: 130px;
+    display: inline-block;
+    border: solid 5px white;
+  } */
+
+.victor {
+  border-radius: 50%;
+  transform: translateY(50%);
+  /* border: solid 5px white; */
+}
+
+.image {
+  display: flex;
+  z-index: 1;
+  justify-content: center;
+  align-items: flex-end;
+  grid-area: image;
+  background: url("./images/bg-pattern-card.svg");
+  background-size: cover;
+  /* border-top-left-radius: 15px;
+    border-top-right-radius: 15px; */
+  position: relative;
+}
+
+.text {
+  grid-area: text;
+  background-color: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  z-index: 0;
+}
+
+.stats {
+  grid-area: stats;
+  display: flex;
+  justify-content: space-around;
+  border-top: solid 1px grey;
+  align-items: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 80px;
+  margin-bottom: 0;
+  font-size: 24px;
+}
+
+p {
+  margin-top: 5px;
+  color: gray;
+}
+
+.age {
+  color: gray;
+  font-weight: 500;
+}
+
+.stat {
+  color: gray;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 500px) {
+  .card {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 140px 140px 60px;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
