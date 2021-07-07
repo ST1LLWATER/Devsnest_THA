@@ -1,5 +1,6 @@
 import "./App.css";
 import React from "react";
+import Counters from "./Counters";
 
 function Box(props) {
   console.log(props.alter, props.i);
@@ -31,6 +32,12 @@ function App() {
           }
           return <Box i={i} alter={alter} />;
         })}
+      </div>
+      <div className="counters">
+        <Counters/>
+        <Counters/>
+        <Counters/>
+        <Counters/>
       </div>
     </>
   );

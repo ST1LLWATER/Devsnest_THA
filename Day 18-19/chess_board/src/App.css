@@ -1,0 +1,32 @@
+#wrapper {
+  width: 200px;
+  height: 200px;
+  border: 20px solid black;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.box {
+  width: 25px;
+  height: 25px;
+  background-color: green;
+}
+
+.counters {
+  margin: 20px;
+  text-align: center;
+}
+
+.counters button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
+  box-shadow: 0 0 10px black;
+  cursor: pointer;
+}
+
+.counters button:active {
+  transform: translateY(1px);
+}
