@@ -34,10 +34,10 @@ function App() {
         })}
       </div>
       <div className="counters">
-        <Counters/>
-        <Counters/>
-        <Counters/>
-        <Counters/>
+        <Counters />
+        {/* <Counters/> */}
+        {/* <Counters/> */}
+        {/* <Counters/> */}
       </div>
     </>
   );
