@@ -1,0 +1,54 @@
+.outer {
+  padding: 15px 12px;
+  margin-top: 1.2rem;
+  outline: 1px solid rgba(128, 128, 128, 0.4);
+  border-radius: 5px;
+  width: 60%;
+  box-shadow: 0 6px 24px -8px rgba(128, 128, 128, 0.541);
+}
+
+.item_name {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.information {
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 9px 10px;
+  margin: 5px 10px 0 0;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+#delete {
+  background: #dc3545;
+}
+
+#delete:hover {
+  background: #d62234;
+}
+
+#edit {
+  background: #17a2b8;
+}
+
+#edit:hover {
+  background: #0195ac;
+}
+
+@media (max-width: 600px) {
+  .outer {
+    width: 90%;
+  }
+}
+
+@media (min-width: 601px) AND (max-width: 1024px) {
+  .outer {
+    width: 80%;
+  }
+}

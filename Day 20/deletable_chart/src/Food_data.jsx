@@ -12,7 +12,7 @@ const Food = [
   {
     id: 2,
     name: "Chowmein",
-    amount: "200",
+    amount: "220",
   },
   {
     id: 3,
