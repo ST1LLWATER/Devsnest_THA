@@ -11,7 +11,7 @@ function Card(props) {
           <h2>
             Victor Crest <span className="age">26</span>
           </h2>
-          <p>London</p>
+          <p>Germany</p>
         </div>
         <div className="stats">
           <div>
