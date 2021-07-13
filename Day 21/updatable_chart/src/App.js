@@ -10,7 +10,8 @@ function App() {
   function handleClick(e) {
     e.preventDefault();
 
-    cards.push({ title, calorie });
+    cards.push({ title, calorie, index: cards.length });
+
     setCards(cards);
 
     setTitle("");
@@ -18,10 +19,13 @@ function App() {
   }
 
   function handleDelete(index) {
-    setCards(cards.filter((_, i) => i !== index));
+    setCards(
+      cards.filter((card) => {
+        console.log(index, card.index, card.index !== index);
+        return card.index !== index;
+      })
+    );
   }
-
-
 
   // function handleEdit()
 
@@ -55,12 +59,12 @@ function App() {
         </div>
       </form>
       <div className="items">
-        {cards.map((data, i) => (
+        {cards.map((data) => (
           <Card
-            key={i}
+            key={data.index}
             title={data.title}
             calorie={data.calorie}
-            handleDelete={() => handleDelete(i)}
+            handleDelete={() => handleDelete(data.index)}
           />
         ))}
       </div>
