@@ -9,9 +9,7 @@ function Api() {
   useEffect(() => {
     const getData = async () => {
       const response = await axios.get("https://api.imgflip.com/get_memes");
-      //   console.log(response);
       const info = response.data.data.memes;
-      console.log(info);
       setData(info);
     };
     getData();
@@ -21,7 +19,7 @@ function Api() {
       {meme === null ? (
         <Templates data={data} setMeme={setMeme} />
       ) : (
-        <Meme meme={meme} />
+        <Meme meme={meme} setMeme={setMeme} />
       )}
     </>
   );
