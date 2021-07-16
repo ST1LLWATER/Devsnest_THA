@@ -14,7 +14,7 @@ for (const item of buttons) {
       screen.innerText = screenValue;
     } else if (buttonText == "=") {
       screenValue = screen.innerText;
-      screen.innerText = eval(screenValue);
+      screen.innerText = eval(screenValue).toFixed(2);
     } else if (buttonText == "DEL") {
       screenValue = screen.innerText;
       let newData = Array.from(screenValue);
