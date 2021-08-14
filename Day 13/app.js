@@ -34,9 +34,7 @@ app.use(express.static("public"));
 
 app.get("/o", async (req, res) => {
   const apiResponse = await nodeFetch(
-<<<<<<< HEAD
     "https://api.openweathermap.org/data/2.5/weather?q=Mussoorie&appid=d0e499fb7d9968879c29a43c3689851d",
-=======
     "{api_key_here}",
 
     {

@@ -5,11 +5,11 @@ function Card(props) {
   const [editing, setEditing] = useState(false);
   const [title, setTitle] = useState(props.title);
   const [calorie, setCalorie] = useState(props.calorie);
-  
-  function validate(){
-    setEditing(false)
-    let newCalorie=calorie.replace(/\D/g,'');
-    setCalorie(newCalorie);
+
+  function validate() {
+    setEditing(false);
+    let newCalorie = calorie.replace(/\D/g, "");
+    // setCalorie(newCalorie);
   }
 
   return (
@@ -25,7 +25,6 @@ function Card(props) {
           <h2 className="item_name">{title}</h2>
         )}
         {editing ? (
-          
           <input
             className="newInput"
             value={calorie}
@@ -35,17 +34,17 @@ function Card(props) {
           <p className="information">You Have Consumed {calorie} Calories</p>
         )}
         <div className="buttons">
-         <button className="btn" id="delete" onClick={props.handleDelete}>
-          DELETE
-        </button>
-        <button
-          className="btn"
-          id="edit"
-          onClick={() => (editing ? validate()  : setEditing(true))}
-        >
-          {editing ? "SAVE" : "EDIT"}
-        </button>
-        </div> 
+          <button className="btn" id="delete" onClick={props.handleDelete}>
+            DELETE
+          </button>
+          <button
+            className="btn"
+            id="edit"
+            onClick={() => (editing ? validate() : setEditing(true))}
+          >
+            {editing ? "SAVE" : "EDIT"}
+          </button>
+        </div>
       </div>
     </>
   );

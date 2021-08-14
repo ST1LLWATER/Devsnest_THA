@@ -17,7 +17,7 @@ const Meme = ({ meme, setMeme }) => {
     form.boxes.map((box, index) => {
       finalMemeReq += `&boxes[${index}][text]=${box.text}`;
     });
-    // const finalMeme = await axios.post(finalMemeReq);
+    // const finalMemeTemplate = await axios.post(finalMemeReq);
     const finalMeme = await fetch(
       `https://api.imgflip.com/caption_image${finalMemeReq}`,
       {
