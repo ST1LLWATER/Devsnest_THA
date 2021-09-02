@@ -1,0 +1,8 @@
+.App {
+  text-align: center;
+}
+
+.todos h1,
+button {
+  display: inline;
+}
