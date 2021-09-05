@@ -35,6 +35,7 @@ nav .search {
   margin: auto;
   padding: 4px 5px;
   width: 215px;
+  border: solid 1px #dbdbdb;
 }
 
 nav .search::placeholder {
@@ -75,4 +76,68 @@ nav .nav_items .explore {
 
 nav .nav_items .like {
   font-size: 1.7em;
+}
+
+.post {
+  height: 1055px;
+  width: 616px;
+  margin: 24px auto;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.post .post_header {
+  height: 60px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.post .post_header .header_more {
+  height: 40px;
+  width: 40px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: 0 0;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.post .post_header .post_pfp {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.post .post_header .titles {
+  margin-left: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.post .post_header .post_title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.post .post_header .post_secTitle {
+  font-size: 12px;
+}
+
+.post .post_image img {
+  height: 750px;
+  width: 100%;
 }

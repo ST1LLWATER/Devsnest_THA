@@ -1,8 +1,3 @@
-import { IoHomeOutline } from "react-icons/io5";
-import { RiMessengerLine } from "react-icons/ri";
-import { AiOutlineCompass } from "react-icons/ai";
-import { AiOutlineHeart } from "react-icons/ai";
-
 function Nav() {
   return (
     <>
