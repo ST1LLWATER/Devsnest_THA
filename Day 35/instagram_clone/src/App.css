@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 nav {
@@ -79,7 +80,7 @@ nav .nav_items .like {
 }
 
 .post {
-  height: 1055px;
+  /* height: 1055px; */
   width: 616px;
   margin: 24px auto;
   border: 1px solid #dbdbdb;
@@ -140,4 +141,78 @@ nav .nav_items .like {
 .post .post_image img {
   height: 750px;
   width: 100%;
+}
+
+.actions {
+  padding: 0 8px;
+  margin-top: 4px;
+  display: flex;
+  flex-direction: row;
+}
+
+.actions button {
+  border: none;
+  background: none;
+  padding: 8px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.main_actions {
+  display: flex;
+}
+
+.actions .bookmark {
+  margin-left: auto;
+}
+
+.likes {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 16px;
+}
+
+.time {
+  font-size: 10px;
+  letter-spacing: 0.2px;
+  color: rgb(142, 142, 142);
+  margin-bottom: 4px;
+  padding: 0 16px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.comment {
+  min-height: 56px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 24px;
+  margin-top: 4px;
+  border-top: 1px solid #efefef;
+  margin-top: auto;
+}
+
+.comment button {
+  padding: 8px 16px 8px 0;
+  background: none;
+  border: none;
+}
+
+.comment input {
+  height: 18px !important;
+  width: 100%;
+  border: none;
+}
+
+.comment input:focus {
+  outline: none;
+  border: none;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
 }
